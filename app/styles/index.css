@@ -34,3 +34,22 @@
     color: var(--primary);
     margin: 5rem 0;
   }
+
+  /*** header ***/
+  .header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(/img/header.jpg);
+    padding: 6rem 0;
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  .header .logo {
+    width: 25rem;
+  }
+
+  .barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

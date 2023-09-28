@@ -3,7 +3,10 @@ import {
   Links,
   Outlet,
   Scripts,
-  LiveReload
+  LiveReload,
+  useCatch,
+  useRouteError,
+  isRouteErrorResponse
 } from "@remix-run/react"
 
 import styles from "~/styles/index.css"
@@ -76,4 +79,21 @@ function Document({ children }) {
       </body>
     </html>
   )
+}
+
+/* Manejo de errores */
+export function ErrorBoundary() {
+  const error = useRouteError()
+
+  if (isRouteErrorResponse(error)) {
+
+    return (
+      <Document>
+        <p className="error"> {error.status} {error.statusText} </p>
+
+      </Document>
+    )
+  }
+
+
 }

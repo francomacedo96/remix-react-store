@@ -4,7 +4,7 @@ import {
   Outlet,
   Scripts,
   LiveReload,
-  useCatch,
+  Link,
   useRouteError,
   isRouteErrorResponse
 } from "@remix-run/react"
@@ -90,7 +90,7 @@ export function ErrorBoundary() {
     return (
       <Document>
         <p className="error"> {error.status} {error.statusText} </p>
-
+        <Link className="error-enlace" to={"/"}>Volver a la página principal</Link>
       </Document>
     )
   }

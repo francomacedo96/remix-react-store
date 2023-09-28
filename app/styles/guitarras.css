@@ -10,7 +10,7 @@
     }
 }
 
-@media (min-width:992) {
+@media (min-width:992px) {
     .guitarras-grid {
         grid-template-columns: repeat(3, 1fr);
     }

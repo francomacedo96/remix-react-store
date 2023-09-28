@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@remix-run/react'
 
 function Guitarra({ guitarra }) {
 
@@ -16,6 +17,7 @@ function Guitarra({ guitarra }) {
                 <p className='descripcion'> {descripcion} </p>
                 <p className='precio'> ${precio} </p>
 
+                <Link className='enlace' to={`/guitarras/${url}`} >Ver producto</Link>
             </div>
 
         </div>

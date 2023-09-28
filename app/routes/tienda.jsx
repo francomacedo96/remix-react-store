@@ -1,6 +1,25 @@
 import { getGuitarras } from "../models/guitarras.server"
 import { useLoaderData } from "@remix-run/react"
-import Guitarra from "../components/guitarra"
+import Guitarra from "~/components/guitarra"
+import styles from "~/styles/guitarras.css"
+
+export function meta() {
+  return [
+    {
+      title: "GuitarLA - Tienda de guitarras",
+      description: "GuitarLA - Nuestra colección"
+    }
+  ]
+}
+
+export function links() {
+  return [
+    {
+      rel: "stylesheet",
+      href: styles
+    }
+  ]
+}
 
 export async function loader() {
   const guitarras = await getGuitarras()

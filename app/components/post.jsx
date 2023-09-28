@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react"
-
+import { formatearFecha } from "../utils/helpers"
 
 function Post({posts}) {
 
@@ -15,10 +15,10 @@ function Post({posts}) {
         <div className="contenido">
 
             <h3> {titulo} </h3>
-          <p className="fecha"> {publishedAt} </p>
+          <p className="fecha"> {formatearFecha(publishedAt)} </p>
 
             <p className="resumen"> {contenido} </p>
-            <Link className="enlace" to={`posts/${url}`}>Leer Post</Link>
+            <Link className="enlace" to={`posts/${url}`}>Seguir leyendo</Link>
         </div>
     </article>
   )

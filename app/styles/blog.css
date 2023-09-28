@@ -21,6 +21,10 @@
 
 }
 
+.post .fecha {
+    font-size:1.4rem;
+}
+
 .post .contenido {
     padding: 1.5rem;
 

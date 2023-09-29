@@ -1,7 +1,6 @@
-import React from 'react'
-import { getGuitarra } from '../../models/guitarras.server'
+import { getGuitarra } from '../models/guitarras.server'
 import { useLoaderData } from '@remix-run/react'
-import styles from "../../styles/guitarras.css"
+import styles from "../styles/guitarras.css"
 
 export async function loader({params}) {
 

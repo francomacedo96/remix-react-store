@@ -18,7 +18,7 @@ function Post({posts}) {
           <p className="fecha"> {formatearFecha(publishedAt)} </p>
 
             <p className="resumen"> {contenido} </p>
-            <Link className="enlace" to={`posts/${url}`}>Seguir leyendo</Link>
+            <Link className="enlace" to={`/post/${url}`}>Seguir leyendo</Link>
         </div>
     </article>
   )

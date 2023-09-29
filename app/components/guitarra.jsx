@@ -17,7 +17,7 @@ function Guitarra({ guitarra }) {
                 <p className='descripcion'> {descripcion} </p>
                 <p className='precio'> ${precio} </p>
 
-                <Link className='enlace' to={`/guitarras/${url}`} >Ver producto</Link>
+                <Link className='enlace' to={`/guitarra/${url}`} >Ver producto</Link>
             </div>
 
         </div>

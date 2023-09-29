@@ -17,8 +17,8 @@
 }
 
 .post {
-
-
+    max-width:80rem;
+    margin: 0 auto;
 }
 
 .post .fecha {
@@ -42,4 +42,12 @@
     -webkit-line-clamp: 6;
     overflow: hidden;
     font-size: 1.8rem;
+}
+
+.post .texto {
+    white-space: pre-wrap;
+}
+
+.mgt-3 {
+    margin-top:3rem;
 }

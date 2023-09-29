@@ -23,7 +23,7 @@ export function meta({data}) {
   if(!data) {
     return [
       {
-        title: `No encontrado`
+        title: `Post no encontrado`
       }
     ]
   }
@@ -53,13 +53,12 @@ export default function Post() {
   const { titulo, contenido, publishedAt, imagen } = post.data[0].attributes
 
   return (
-    <article className="contenido post">
+    <article className="contenido post mgt-3">
 
       <img src={imagen.data.attributes.url} alt="" />
       <div className="contenido">
-          <h3> {titulo} </h3>
           <p className="fecha"> {formatearFecha(publishedAt)} </p>
-
+          <h3> {titulo} </h3>
           <p className="texto"> {contenido} </p>
       </div>
 

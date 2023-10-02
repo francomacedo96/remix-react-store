@@ -24,6 +24,7 @@ export default function ListadoGuitarras({guitarras}) {
         </>
     )*/
 
+    console.log(guitarras)
 
     return (
         <>

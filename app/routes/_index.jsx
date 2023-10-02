@@ -2,6 +2,7 @@ import { getGuitarras } from "~/models/guitarras.server.js"
 import { getPosts } from "~/models/posts.server.js"
 import { useLoaderData } from "@remix-run/react"
 import ListadoGuitarras from "../components/listadoGuitarras"
+import ListadoPosts from "../components/listadoPosts"
 import stylesGuitarras from "../styles/guitarras.css"
 import stylesBlog from "../styles/blog.css"
 
@@ -56,6 +57,12 @@ function Index() {
         />
 
       </main>
+
+      <section>
+        <ListadoPosts
+          posts={posts}
+        />
+      </section>
 
     </>
   )

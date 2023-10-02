@@ -33,7 +33,12 @@ function Navegacion() {
                 Blog
             </Link>
 
-
+            <Link
+                to="ex"
+                className={location.pathname === "/ex" ? "active" : ""}
+            >
+                Ex
+            </Link>
 
 
         </nav>

@@ -34,19 +34,14 @@ export async function loader() {
         getPosts()
     ])
 
-    console.log(guitarras)
-    console.log(posts)
-
-    return [
-        guitarras.data,
-        posts.data
-    ]
+    return guitarras.data
 
 }
 
 function Ex() {
 
-    const { guitarras, posts } = useLoaderData()
+    const guitarras = useLoaderData()
+    console.log(guitarras)
 
     return (
         <>
@@ -58,11 +53,7 @@ function Ex() {
 
                 />
 
-                <section>
-                    <ListadoPosts
-                        posts={posts}
-                    />
-                </section>
+                
 
             </main>
 

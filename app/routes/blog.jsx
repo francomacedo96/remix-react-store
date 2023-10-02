@@ -23,7 +23,14 @@ function Blog() {
   console.log(posts)
 
   return (
+
+      
+
+
     <main className="contenedor">
+
+
+
 
       <ListadoPosts
         posts={posts}
